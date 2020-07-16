@@ -1,7 +1,15 @@
 package test;
 
+import java.util.Scanner;
+
 public class Test {
     public static void main(String[] args) {
-        System.out.println("1");
+        Scanner scanner= new Scanner(System.in);
+        while (true){
+            String s= scanner.nextLine();
+            if (s.matches("[0-9]{0,9}a"))
+                System.out.println(s);
+        }
+
     }
 }
